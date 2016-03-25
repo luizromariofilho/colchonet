@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<h1><%= t '.title', quarto: @room.title %></h1>
 
 <p>
   <strong>Title:</strong>
@@ -15,5 +15,5 @@
   <%= @room.description %>
 </p>
 
-<%= link_to 'Edit', edit_room_path(@room) %> |
-<%= link_to 'Back', rooms_path %>
+<%= link_to t('links.edit'), edit_room_path(@room) %> |
+<%= link_to t('links.back'), rooms_path %>
